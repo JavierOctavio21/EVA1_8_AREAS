@@ -1,0 +1,54 @@
+                double rArea;
+                
+                rArea = rBase * rAltura / 2;
+                cout << "El area del triangulo es: ";
+                cout << rArea << endl;
+            } else {
+                if (sFigura == "rectangulo") {
+                    cout << "Introdusca su base" << endl;
+                    double rBase;
+                    
+                    cin >> rBase;
+                    cout << "Introdusca la altura" << endl;
+                    double rAltura;
+                    
+                    cin >> rAltura;
+                    double rArea;
+                    
+                    rArea = rBase * rAltura;
+                    cout << "El area del rectangulo es: ";
+                    cout << rArea << endl;
+                } else {
+                    if (sFigura == "circulo") {
+                        cout << "Introdusca el radio" << endl;
+                        double rRadio;
+                        
+                        cin >> rRadio;
+                        double rArea;
+                        
+                        rArea = 3.1416 * pow(rRadio, 2);
+                        cout << "el area del circulo es: ";
+                        cout << rArea << endl;
+                    } else {
+                        if (sFigura == "rombo") {
+                            cout << "Introdusca el Diametro Mayor" << endl;
+                            double dMayor;
+                            
+                            cin >> dMayor;
+                            cout << "Introdusca el Diametro Menor" << endl;
+                            double dMenor;
+                            
+                            cin >> dMenor;
+                            double rArea;
+                            
+                            rArea = dMayor * dMenor / 2;
+                            cout << "El area del rombo es: " << endl;
+                            cout << rArea << endl;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    return 0;
+}
