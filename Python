@@ -1,0 +1,50 @@
+    print("Introdusca el valor del Lado Mayor")
+    rMayor = float(input())
+    print("Introdusca el valor del Lado Menor")
+    rMenor = float(input())
+    print("Introdusca el valor de la Altura")
+    rAltura = float(input())
+    rArea = (rMayor + rMenor) * rAltura / 2
+    print("El area del trapecio es: ", end='', flush=True)
+    print(rArea)
+else:
+    if sFigura == "cuadrado":
+        print("Introdusca el valor del Lado")
+        rLado = float(input())
+        rArea = rLado * rLado
+        print("El area del cuadrado es: ", end='', flush=True)
+        print(rArea)
+    else:
+        if sFigura == "triangulo":
+            print("Introdusca su base")
+            rBase = float(input())
+            print("Introdusca la altura")
+            rAltura = float(input())
+            rArea = rBase * rAltura / 2
+            print("El area del triangulo es: ", end='', flush=True)
+            print(rArea)
+        else:
+            if sFigura == "rectangulo":
+                print("Introdusca su base")
+                rBase = float(input())
+                print("Introdusca la altura")
+                rAltura = float(input())
+                rArea = rBase * rAltura
+                print("El area del rectangulo es: ", end='', flush=True)
+                print(rArea)
+            else:
+                if sFigura == "circulo":
+                    print("Introdusca el radio")
+                    rRadio = float(input())
+                    rArea = 3.1416 * rRadio ** 2
+                    print("el area del circulo es: ", end='', flush=True)
+                    print(rArea)
+                else:
+                    if sFigura == "rombo":
+                        print("Introdusca el Diametro Mayor")
+                        dMayor = float(input())
+                        print("Introdusca el Diametro Menor")
+                        dMenor = float(input())
+                        rArea = dMayor * dMenor / 2
+                        print("El area del rombo es: ")
+                        print(rArea)
